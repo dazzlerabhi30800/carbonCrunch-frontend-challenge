@@ -108,6 +108,7 @@ const HeroSection = () => {
           }`}
         >
           <img
+            fetchPriority="high"
             src={heroData[actualIndex].img}
             alt="Banner Img"
             className="w-full object-cover rounded-md h-[350px] sm:h-[400px] lg:h-[500px]"

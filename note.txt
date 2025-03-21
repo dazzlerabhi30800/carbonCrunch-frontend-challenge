@@ -10,4 +10,4 @@
 10 X -> Make feature section responsive
 11 X -> Make service section responsive
 12 X -> Make website responsive
-13  -> Make hero slider
+13 X -> Make hero slider

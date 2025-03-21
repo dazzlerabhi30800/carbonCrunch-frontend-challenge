@@ -18,7 +18,12 @@ const ServiceSection = () => {
       </div>
       <div className="flex flex-col  md:flex-row gap-10 md:gap-2 items-center ">
         <div className="basis-1/2 flex">
-          <img src="./service-img.png" alt="Service Img" className="w-full" />
+          <img
+            loading="lazy"
+            src="./service-img.png"
+            alt="Service Img"
+            className="w-full"
+          />
         </div>
         {/* Services Wrapper */}
         <div className="relative flex flex-col gap-[17px] flex-1 w-full">
