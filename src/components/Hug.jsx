@@ -8,7 +8,7 @@ const Hug = () => {
         // Hug Comp
         <div
           key={index}
-          className={`flex flex-col py-[9px] px-[14px] rounded-xl ${data.bgClass} shadow-md flex-1 w-full`}
+          className={`flex flex-col md:basis-initial py-[9px] px-[14px] rounded-xl ${data.bgClass} shadow-md flex-1`}
         >
           <h3
             className={`text-[40px] md:text-[53px] font-bold ${data.labelClass}`}

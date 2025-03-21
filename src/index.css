@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-@import url(https://db.onlinewebfonts.com/c/0927e08fbdf95205b63c5b8774adeef6?family=Aeonik+TRIAL);
 @import url(https://db.onlinewebfonts.com/c/d95bf2f30035a050142565e03d44da71?family=Aeonik);
 
 @import "tailwindcss";
@@ -28,6 +27,10 @@
   }
 }
 
+:root {
+  --animation-ease: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 html {
   width: 100%;
   overflow-x: hidden;
@@ -39,11 +42,28 @@ body {
   color: var(--color-black2);
 }
 
-.slide-up {
-  animation: slideUp 0.3s linear forwards;
+.anim-exit {
+  animation: slideLeft 0.5s var(--animation-ease) forwards;
 }
-.slide-down {
-  animation: slideDown 0.3s linear forwards;
+.anim-reveal {
+  animation: slideRight 0.5s var(--animation-ease) forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-120%);
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(120%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideUp {
@@ -58,10 +78,17 @@ body {
 @keyframes slideDown {
   from {
     transform: translateY(800px);
-    /* opacity: 0; */
   }
   to {
     transform: translateY(0);
-    /* opacity: 1; */
+  }
+}
+
+@media Screen and (width >= 768px) {
+  .anim-exit {
+    animation: slideUp 0.5s var(--animation-ease) forwards;
+  }
+  .anim-reveal {
+    animation: slideDown 0.5s var(--animation-ease) forwards;
   }
 }

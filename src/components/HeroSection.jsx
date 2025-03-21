@@ -42,7 +42,7 @@ const HeroSection = () => {
 
   return (
     <section className="mt-20 px-8 md:px-16 flex flex-col gap-10">
-      <div className="flex flex-col gap-5 lg:flex-row lg:gap-0 items-center font-medium overflow-hidden">
+      <div className="flex flex-col gap-8 lg:flex-row lg:gap-0 items-center font-medium overflow-hidden">
         {/* Left Section */}
         <div className="flex flex-col w-full lg:basis-1/2 w-full md:pr-8">
           <div
@@ -71,11 +71,23 @@ const HeroSection = () => {
           >
             carbon crunch
           </h2>
-          <p className="font-medium w-[95%] text-black2 text-2xl mt-4 mb-11">
+          <p
+            className={`font-medium w-[95%] text-black2 text-2xl mt-4 mb-11 transition duration-400 linear ${
+              isTransition
+                ? "-translate-x-[250px] opacity-0"
+                : "translate-x-0 opacity-100"
+            }`}
+          >
             <span className="text-green-600 mr-2">95%</span>
             Accurate Carbon Calculations Trusted by Industry Leaders
           </p>
-          <div className="flex items-center gap-4">
+          <div
+            className={`flex items-center gap-4 transition duration-400 ease-in-out ${
+              isTransition
+                ? "-translate-x-[300px] opacity-0"
+                : "translate-x-0 opacity-100"
+            } `}
+          >
             <Button
               label="Free Calculator"
               classes="bg-transparent text-green-500 hover:text-green-300"
@@ -90,7 +102,9 @@ const HeroSection = () => {
         {/* Right Section */}
         <div
           className={`flex-1 w-full transition duration-800 linear ${
-            isTransition ? "slide-up" : "slide-down"
+            isTransition
+              ? "anim-exit"
+              : "anim-reveal"
           }`}
         >
           <img
@@ -101,7 +115,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Navigation Button */}
-      <div className="flex gap-4 justify-center mt-5">
+      <div className="flex gap-3 justify-center mt-5">
         {new Array(heroData.length).fill(0).map((_, i) => (
           <button
             disabled={isTransition}
