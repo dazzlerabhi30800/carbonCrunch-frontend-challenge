@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import Button from "./Button";
 import { heroData } from "../data/data";
 
@@ -6,6 +6,13 @@ const HeroSection = () => {
   const [index, setIndex] = useState(0);
   const [actualIndex, setActualIndex] = useState(0);
   const [isTransition, setIsTransition] = useState(false);
+
+  useLayoutEffect(() => {
+    heroData.forEach((data) => {
+      const img = new Image();
+      img.src = data.img;
+    });
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {

@@ -13,5 +13,5 @@
 
 # External assest used
 
-1. for icons I've used Font Awesome Cdn
+1. for icons I've used Font Awesome Cdn.
 2. in the hero section slider I've downloaded images from unsplash.com, they're in public folder namely - slider-2.jpg, slider-3.jpg & slider-4.jpg.
