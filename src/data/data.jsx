@@ -1,3 +1,11 @@
+export const links = [
+  { label: "Home", path: "#" },
+  { label: "Services", path: "#" },
+  { label: "Blog", path: "#" },
+  { label: "About Us", path: "#" },
+  { label: "Contact", path: "#" },
+];
+
 export const hugData = [
   {
     label: "98%",

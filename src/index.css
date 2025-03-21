@@ -38,3 +38,30 @@ body {
   min-height: 100vh;
   color: var(--color-black2);
 }
+
+.slide-up {
+  animation: slideUp 0.5s linear forwards;
+}
+.slide-down {
+  animation: slideDown 0.5s linear forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-120%);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(800px);
+    /* opacity: 0; */
+  }
+  to {
+    transform: translateY(0);
+    /* opacity: 1; */
+  }
+}

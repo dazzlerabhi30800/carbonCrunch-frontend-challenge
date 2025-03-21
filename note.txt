@@ -4,5 +4,5 @@
 4 X -> Export data from data folder
 5 X -> Design Features Section
 6 X -> Design Services Section
-7 -> Make Responsive Navbar
+7 X -> Make Responsive Navbar
 8 -> Make website responsive
