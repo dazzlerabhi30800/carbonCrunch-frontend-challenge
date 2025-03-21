@@ -3,7 +3,7 @@ import { hugData } from "../data/data";
 
 const Hug = () => {
   return (
-    <section className="flex flex-wrap gap-6 md:gap-[35px] px-8 md:px-16 mt-28 md:mt-40">
+    <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-[35px] px-8 md:px-16 mt-28 md:mt-40">
       {hugData?.map((data, index) => (
         // Hug Comp
         <div
@@ -11,11 +11,11 @@ const Hug = () => {
           className={`flex flex-col md:basis-initial py-[9px] px-[14px] rounded-xl ${data.bgClass} shadow-md flex-1`}
         >
           <h3
-            className={`text-[40px] md:text-[53px] font-bold ${data.labelClass}`}
+            className={`text-[30px] sm:text-[40px] md:text-[53px] font-bold ${data.labelClass}`}
           >
             {data.label}
           </h3>
-          <p className={`${data.infoClass} text-sm md:text-base`}>
+          <p className={`${data.infoClass} text-xs sm:text-sm md:text-base`}>
             {data.info}
           </p>
         </div>
