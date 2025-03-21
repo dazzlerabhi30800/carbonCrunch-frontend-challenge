@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url(https://db.onlinewebfonts.com/c/0927e08fbdf95205b63c5b8774adeef6?family=Aeonik+TRIAL);
+@import url(https://db.onlinewebfonts.com/c/d95bf2f30035a050142565e03d44da71?family=Aeonik);
+
+@import "tailwindcss";
+
+@theme {
+  --font-dm: "DM Sans", sans-serif;
+  --font-heading: "Aeonik", sans-serif;
+  --color-black1: #222222;
+  --color-black2: #2d2d2d;
+  --color-black3: #070708;
+  --color-gray1: #e2e2e2;
+}
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+  * {
+    @apply m-0 p-0 box-border;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+  }
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-dm);
+  min-height: 100vh;
+  color: var(--color-black2);
+}

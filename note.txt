@@ -1,0 +1,8 @@
+1 X -> Design header with navbar
+2 X -> Design Hero Section
+3 X -> Design Hug Section
+4 X -> Export data from data folder
+5 X -> Design Features Section
+6 X -> Design Services Section
+7 -> Make Responsive Navbar
+8 -> Make website responsive
