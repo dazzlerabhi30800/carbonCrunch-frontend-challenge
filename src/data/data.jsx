@@ -6,6 +6,21 @@ export const links = [
   { label: "Contact", path: "#" },
 ];
 
+export const heroData = [
+  {
+    img: "./slider-1.png",
+  },
+  {
+    img: "./slider-2.jpg",
+  },
+  {
+    img: "./slider-3.jpg",
+  },
+  {
+    img: "./slider-4.jpg",
+  },
+];
+
 export const hugData = [
   {
     label: "98%",

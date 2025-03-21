@@ -5,4 +5,9 @@
 5 X -> Design Features Section
 6 X -> Design Services Section
 7 X -> Make Responsive Navbar
-8 -> Make website responsive
+8 X  -> Make Hero section responsive 
+9 X -> Make hug section responsive 
+10 X -> Make feature section responsive
+11 X -> Make service section responsive
+12 X -> Make website responsive
+13  -> Make hero slider

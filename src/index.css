@@ -40,10 +40,10 @@ body {
 }
 
 .slide-up {
-  animation: slideUp 0.5s linear forwards;
+  animation: slideUp 0.3s linear forwards;
 }
 .slide-down {
-  animation: slideDown 0.5s linear forwards;
+  animation: slideDown 0.3s linear forwards;
 }
 
 @keyframes slideUp {

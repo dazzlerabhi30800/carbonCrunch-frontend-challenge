@@ -6,7 +6,7 @@ import ServiceComp from "../utils/ServiceComp";
 
 const ServiceSection = () => {
   return (
-    <section className="flex flex-col mt-[75px] mb-[100px] px-16 gap-5">
+    <section className="flex flex-col mt-10 md:mt-[75px] mb-[50px] md:mb-[100px] px-8 md:px-16 gap-5">
       <div className="mx-auto flex flex-col gap-1">
         <SectionLabel label="our services" />
         <SectionHeading
@@ -16,8 +16,8 @@ const ServiceSection = () => {
           textClass="text-orange-400"
         />
       </div>
-      <div className="flex items-center gap-2">
-        <div className="basis-1/2">
+      <div className="flex flex-col  md:flex-row gap-10 md:gap-2 items-center ">
+        <div className="basis-1/2 flex">
           <img src="./service-img.png" alt="Service Img" className="w-full" />
         </div>
         {/* Services Wrapper */}

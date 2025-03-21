@@ -3,7 +3,7 @@ import React from "react";
 const SectionHeading = ({ highlightText, text, highlightClass, textClass }) => {
   return (
     <h4
-      className={`text-[64px] font-bold  ${
+      className={`text-[40px] sm:text-[50px] md:text-[64px] font-bold  ${
         textClass ? textClass : "text-black2"
       }`}
     >

@@ -6,11 +6,11 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between pt-3 px-4 sm:px-6 md:pt-6 lg:pt-12 lg:px-10 xl:pt-[58px] xl:px-14">
       {/* Logo */}
-      <div className="flex items-center gap-[6px] text-sm lg:text-base xl:text-lg">
+      <div className="flex items-center gap-[6px] text-lg lg:text-base xl:text-lg">
         <img
           src="./logo.png"
           alt="Carboncrunch"
-          className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px]"
+          className="w-[40px] h-[40px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px]"
         />
         <p>Carboncrunch</p>
       </div>
@@ -25,9 +25,11 @@ const Header = () => {
         )}
       </button>
       <nav
-        className={`transition duration-400 linear ${
-          showNavbar ? "translate-x-0" : "translate-x-[500px]"
-        } flex flex-col md:translate-x-0 md:transition-none  md:flex-row fixed top-0 right-0 h-screen md:h-auto w-3/4 md:w-fit md:static md:top-auto md:right-0 bg-slate-200 md:bg-transparent z-20 md:justify-between gap-14 md:gap-12 lg:gap-24 xl:gap-32 py-10 px-5 md:p-0`}
+        className={` ${
+          showNavbar
+            ? "translate-x-0  transition duration-400 linear"
+            : "translate-x-[800px]"
+        } flex flex-col md:translate-x-0 md:transition-none  md:flex-row fixed top-0 right-0 h-screen md:h-auto w-3/4 md:w-fit md:static md:top-auto md:right-0 bg-zinc-100 md:bg-transparent z-20 md:justify-between gap-14 md:gap-12 lg:gap-24 xl:gap-32 py-10 px-5 md:p-0`}
       >
         <ul className="flex flex-col gap-7 text-sm lg:text-base lg:gap-9 xl:gap-11 md:flex-row items-center font-medium">
           {links?.map((item, index) => (
