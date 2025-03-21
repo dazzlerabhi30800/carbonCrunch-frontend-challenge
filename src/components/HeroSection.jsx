@@ -102,9 +102,7 @@ const HeroSection = () => {
         {/* Right Section */}
         <div
           className={`flex-1 w-full transition duration-800 linear ${
-            isTransition
-              ? "anim-exit"
-              : "anim-reveal"
+            isTransition ? "anim-exit" : "anim-reveal"
           }`}
         >
           <img

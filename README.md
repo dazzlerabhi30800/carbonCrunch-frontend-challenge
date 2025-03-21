@@ -1,12 +1,17 @@
-# React + Vite
+# Preview Link :- _[Live Link](https://carbon-crunch-frontend-challenge.vercel.app/)_
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tech Stack Used
 
-Currently, two official plugins are available:
+1. Library -> React
+2. CSS -> TailwindCSS
+3. Icons -> Fontawesome CDN
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# How to run
 
-## Expanding the ESLint configuration
+1. first clone or download the repo, then inside root folder run the command `npm install` to install dependencies.
+2. then run the server using `npm run dev`.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# External assest used
+
+1. for icons I've used Font Awesome Cdn
+2. in the hero section slider I've downloaded images from unsplash.com, they're in public folder namely - slider-2.jpg, slider-3.jpg & slider-4.jpg.

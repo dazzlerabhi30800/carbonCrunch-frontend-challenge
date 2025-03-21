@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between pt-3 px-4 sm:px-6 md:pt-6 lg:pt-12 lg:px-10 xl:pt-[58px] xl:px-14">
       {/* Logo */}
-      <div className="flex items-center gap-[6px] text-lg lg:text-base xl:text-lg">
+      <div className="flex items-center gap-[6px] text-lg md:text-sm lg:text-base xl:text-lg">
         <img
           src="./logo.png"
           alt="Carboncrunch"
