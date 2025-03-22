@@ -58,7 +58,7 @@ const HeroSection = () => {
            `}
           >
             <img src="./hi-icon.png" alt="Hi" className="w-8 h-8" />
-            <p>Let's Save our Environment</p>
+            <p>{heroData[actualIndex].labelText}</p>
           </div>
           <h1
             className={`text-black2 font-bold text-3xl sm:text-4xl md:text-6xl mt-[11px] transition duration-500 linear ${

@@ -8,15 +8,19 @@ export const links = [
 
 export const heroData = [
   {
+    labelText: "Let's save our environment",
     img: "./slider-1.png",
   },
   {
+    labelText: "Don't use plastics",
     img: "./slider-2.jpg",
   },
   {
+    labelText: "Don't litter around you",
     img: "./slider-3.jpg",
   },
   {
+    labelText: "Make our earth green",
     img: "./slider-4.jpg",
   },
 ];

@@ -31,8 +31,11 @@ const ServiceSection = () => {
             <ServiceComp key={index} {...data} />
           ))}
           {/* Navigation Button */}
-          <button className="bg-[#fff1da] hover:bg-amber-200 rounded-[50%] py-2 px-3 text-black2 absolute -bottom-4 text-xl left-1/2 -translate-x-1/2 shadow-md transition duration-200 hover:scale-120">
-            <i className="fa-solid fa-chevron-down"></i>
+          <button
+            onClick={() => window.scrollTo(0, 0)}
+            className="bg-[#fff1da] hover:bg-amber-200 rounded-[50%] py-2 px-3 text-black2 absolute -bottom-4 text-xl left-1/2 -translate-x-1/2 shadow-md transition duration-200 hover:scale-120 group"
+          >
+            <i className="fa-solid fa-chevron-up translate-y-1 group-hover:-translate-y-1 transition duration-300 linear"></i>
           </button>
         </div>
       </div>
