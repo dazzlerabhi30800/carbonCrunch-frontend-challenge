@@ -32,6 +32,7 @@ const ServiceSection = () => {
           ))}
           {/* Navigation Button */}
           <button
+            title="Go to top"
             onClick={() => window.scrollTo(0, 0)}
             className="bg-[#fff1da] hover:bg-amber-200 rounded-[50%] py-2 px-3 text-black2 absolute -bottom-4 text-xl left-1/2 -translate-x-1/2 shadow-md transition duration-200 hover:scale-120 group"
           >
